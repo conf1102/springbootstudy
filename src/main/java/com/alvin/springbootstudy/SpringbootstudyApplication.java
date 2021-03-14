@@ -19,6 +19,7 @@ public class SpringbootstudyApplication {
 	public ServletRegistrationBean<MyServlet> getServletRegistrationBean(){
 		ServletRegistrationBean<MyServlet> bean = new ServletRegistrationBean<>(new MyServlet(),"/s2");
 		bean.setLoadOnStartup(1);
+
 		return bean;
 	}
 
